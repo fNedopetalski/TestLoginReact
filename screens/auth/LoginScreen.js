@@ -35,7 +35,6 @@ export default class LoginScreen extends React.Component {
                 <TextInput
                     value={this.state.email}
                     style={styles.login}
-                    autoFocus= {true}
                     onChangeText={(text) => {this.setState({email: text})}}
                     underlineColorAndroid= "rgba(0,0,0,0)"
                     placeholder= "Ex: example@gmail.com"

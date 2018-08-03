@@ -1,14 +1,13 @@
 import React from 'react';
 import { Platform } from 'react-native';
-import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
+import {createSwitchNavigator } from 'react-navigation';
 
-import TestScreen from '../screens/TestScreen';
+import EscolheSala from './../screens/Salas/EscolheSala'
+import CriarSala from './../screens/Salas/CriarSala'
+import EntrarSala from './../screens/Salas/EntrarSala'
 
-const TestStack = createStackNavigator({
-  Test: TestScreen,
-});
-
-
-export default createBottomTabNavigator({
-  TestStack,
+export default createSwitchNavigator({
+  EscolheSala: EscolheSala,
+  CriarSala: CriarSala,
+  EntrarSala: EntrarSala,
 });
